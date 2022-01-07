@@ -16,6 +16,11 @@ export class QuoteComponent implements OnInit {
     new Quotes (3, 'When the last point is done, we are humans. Give your opponent a hug and say, \'great fight,\' and that\'s all.', 'Norris Ambune', 'Novak Djokovic', new Date(2021,11,22))
   ]
 
+  //  the toggle function takes index of type any as an argument and the logic for displaying the insights defined to change the showInsights from false to true and vise versa
+  toggleInsights(index: any) {
+    this.quotes[index].showInsights = !this.quotes[index].showInsights;
+  }
+
   constructor() { }
 
   ngOnInit(): void {
