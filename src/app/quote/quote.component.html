@@ -1,14 +1,18 @@
 <p>quote works!</p>
 
 <div class="allcontents container-fluid">
+
   <div class="row1" *ngFor="let quotes of quotes  let i = index">
-    <i class="fa fa-quote-left" aria-hidden="true"></i>{{quotes.author}}
-  </div>
-  <p>
+    <p><i class="fa fa-quote-left" aria-hidden="true"></i>{{quotes.author}}</p>
 
-  </p>
-  <div class="icons">
+    <p>
+      {{ quotes.quote }}
+    </p>
 
+    <span><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span><span><i class="fa fa-thumbs-o-down" aria-hidden="true"></i></span><span><i class="fa fa-trash-o" aria-hidden="true"></i></span>
+
+    <p>Posted by: {{ quotes.postBy }}</p>
+    <p>Post done: {{ quotes.postDate }}</p>
   </div>
-  <p></p>
+  
 </div>
