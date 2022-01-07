@@ -25,3 +25,6 @@ export class DateCountPipe implements PipeTransform {
   }
 
 }
+
+
+//  the logic above will help us count how many days have passed since the quote was shared on the platform

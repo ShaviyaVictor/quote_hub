@@ -2,6 +2,9 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~font-awesome/css/font-awesome.min.css";
 
+body {
+  margin: 3rem;
+}
 * {
-  margin: 1rem;
+  margin-left: 0.2rem;
 }
