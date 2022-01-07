@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Quotes } from '../classes/quotes';
 
 @Component({
   selector: 'app-quote',
@@ -6,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
+
+  quotes: Quotes[] = [
+    new Quotes (1, 'You can\’t write without a reader. It\’s precisely like a kiss—you can\’t do it alone.', 'Victor Shaviya', 'John Cheever', new Date(2022,1,7)),
+    new Quotes (1, 'You can\’t write without a reader. It\’s precisely like a kiss—you can\’t do it alone.', 'Victor Shaiya', 'John Cheever', new Date(2022,1,7)),
+    new Quotes (2, 'Graduation is an exciting time. It marks both an ending and a beginning; it\’s warm memories of the past and big dreams for the future.', 'Josphine Mbaisi', 'Veronica Purcell', new Date(2021,1,10)),
+    new Quotes (3, 'When the last point is done, we are humans. Give your opponent a hug and say, \'great fight,\' and that\'s all.', 'Norris Ambune', 'Novak Djokovic', new Date(2021,11,3))
+  ]
 
   constructor() { }
 
