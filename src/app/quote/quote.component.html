@@ -14,7 +14,7 @@
         <button (click)= 'toggleInsights(i)'>Insights</button>
 
         <!--  we are binding the new quotin property to the child component so as to have it receive data from the parent component whose properties are of type 'quotes'  -->
-        <app-quote-insights *ngIf = 'quotes.showInsights' [quotin]='quotes'></app-quote-insights>
+        <app-quote-insights *ngIf = 'quotes.showInsights' [quotin]='quotes' (isDeleted)= "quoteDelete($event, i)"></app-quote-insights>
 
       </div>
       
