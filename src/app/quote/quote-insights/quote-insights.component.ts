@@ -18,6 +18,14 @@ export class QuoteInsightsComponent implements OnInit {
     this.isDeleted.emit(deleted);
   }
   
+  likeQuote(){
+    this.quotin.likes++
+  }
+
+  dislikeQuote(){
+    this.quotin.dislikes++
+  }
+
   constructor() { }
 
   ngOnInit(): void {

@@ -21,6 +21,7 @@ export class QuoteComponent implements OnInit {
     this.quotes[index].showInsights = !this.quotes[index].showInsights;
   }
 
+  //  "Define the logic for the function declared in the html file having within it the event to be emitted with the index and the user will be warned to confirm if for sure they want the quote deleted
   quoteDelete(isDeleted: boolean, index: any){
     if (isDeleted){
       let toDelete = confirm('Do you want the quote deleted?');
