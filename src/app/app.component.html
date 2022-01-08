@@ -521,8 +521,13 @@
 
 
 <!--  Start of my component html code  -->
-<div id="title">
-  <h1> <span id="left">{{ titleLeft }}</span><span id="right">{{ titleRight }}</span></h1>
+
+
+<div class="body">
+  <div id="title">
+    <h1> <span id="left">{{ titleLeft }}</span><span id="right">{{ titleRight }}</span></h1>
+  </div>
+  <app-quote></app-quote>
+  <router-outlet></router-outlet>
 </div>
-<app-quote></app-quote>
-<router-outlet></router-outlet>
+

@@ -20,6 +20,11 @@
 
 body {
   margin: 3rem;
+  background-image: url(../src/assets/bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 * {
   margin-left: 0.2rem;
