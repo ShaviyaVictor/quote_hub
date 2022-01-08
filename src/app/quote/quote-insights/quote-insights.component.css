@@ -5,3 +5,27 @@ p {
 #author {
   font-weight: 400;
 }
+
+span {
+  font-size: 1.3em;
+  color: white;
+}
+
+.fa-trash-o {
+  float: right;
+  margin-right: 5%;
+  background-color: red;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+}
+.fa-thumbs-o-down, .fa-thumbs-o-up {
+  margin-left: 5%;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+}
+.fa-thumbs-o-up {
+  background-color: green;
+}
+.fa-thumbs-o-down {
+  background-color: tomato;
+}
