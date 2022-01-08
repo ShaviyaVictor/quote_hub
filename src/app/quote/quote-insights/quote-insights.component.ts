@@ -17,11 +17,11 @@ export class QuoteInsightsComponent implements OnInit {
   deleteQuote(deleted: boolean){
     this.isDeleted.emit(deleted);
   }
-  
+ 
+  //  Declaring the functions to enable us capture the likes and dislikes
   likeQuote(){
     this.quotin.likes++
   }
-
   dislikeQuote(){
     this.quotin.dislikes++
   }
