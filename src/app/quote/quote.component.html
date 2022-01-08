@@ -7,8 +7,11 @@
         <p><i class="fa fa-quote-left" aria-hidden="true"></i></p>
 
         <blockquote>
-          {{ quotes.quote }} <br>
-          <i><strong class="text-muted">_{{quotes.author}}</strong></i>
+          <div id="quote">
+            {{ quotes.quote }}
+            <br>
+            <i><strong class="text-muted">_{{quotes.author}}</strong></i>
+          </div>
         </blockquote>
 
         <button (click)= 'toggleInsights(i)'>Insights</button>

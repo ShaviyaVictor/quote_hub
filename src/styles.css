@@ -1,6 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~font-awesome/css/font-awesome.min.css";
+/*  Lato font 300 and 900 for h1
+  font-family: 'Lato', sans-serif;    */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+
+/*  Trykker font 400 for the quotes
+  font-family: 'Trykker', serif;    */
+@import url('https://fonts.googleapis.com/css2?family=Trykker&display=swap');
+
+/*  Martel Sans font for other element: 600 for the buttons; 200 for the details; 400 for author and labels
+  font-family: 'Martel Sans', sans-serif;   */
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap');
+
+
 
 body {
   margin: 3rem;
@@ -10,4 +26,32 @@ body {
 }
 .fa:hover {
   cursor: pointer;
+}
+
+#quote {
+  font-family: 'Trykker', serif;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+.text-muted {
+  float: right;
+  margin-right: 20%;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+span#left {
+  font-weight: 500;
+  font-size: 1.5em;  
+}
+span#right {
+  font-weight: 900;
+  font-size: 1.5em; 
+}
+
+button {
+  font-family: 'Martel Sans', sans-serif;
+  font-weight: 600;
 }
