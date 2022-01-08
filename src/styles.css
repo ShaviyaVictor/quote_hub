@@ -8,3 +8,6 @@ body {
 * {
   margin-left: 0.2rem;
 }
+.fa:hover {
+  cursor: pointer;
+}
