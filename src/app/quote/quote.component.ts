@@ -21,7 +21,15 @@ export class QuoteComponent implements OnInit {
     this.quotes[index].showInsights = !this.quotes[index].showInsights;
   }
 
+  quoteDelete(isDeleted: boolean, index: any){
+    if (isDeleted){
+      let toDelete = confirm('Do you want the quote deleted?');
 
+      if(toDelete){
+        this.quotes.splice(index, 1);
+      }
+    }
+  }
 
   constructor() { }
 
