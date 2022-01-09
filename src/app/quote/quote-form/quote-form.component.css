@@ -1,0 +1,15 @@
+
+form {
+  margin-left: 4rem;
+}
+
+button {
+  background-color: #93C4A4;
+}
+button:hover {
+  background-color: #226F3C;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+}
