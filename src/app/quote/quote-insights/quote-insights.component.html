@@ -2,9 +2,11 @@
 
 <div>
 
-  <span><i class="fa fa-thumbs-o-up" aria-hidden="true" id="like" (click)= "likeQuote()">{{ quotin.likes }}</i></span>
-  <span><i class="fa fa-thumbs-o-down" aria-hidden="true" id="dislike" (click)="dislikeQuote()">{{ quotin.dislikes }}</i></span>
-  <span><i class="fa fa-trash-o" aria-hidden="true" id="delete" (click)= 'deleteQuote(true)'></i></span>
+  <div>
+    <span><i class="fa fa-thumbs-o-up" aria-hidden="true" id="like" (click)= "likeQuote()">{{ quotin.likes }}</i></span>
+    <span><i class="fa fa-thumbs-o-down" aria-hidden="true" id="dislike" (click)="dislikeQuote()">{{ quotin.dislikes }}</i></span>
+    <span><i class="fa fa-trash-o" aria-hidden="true" id="delete" (click)= 'deleteQuote(true)'></i></span>
+  </div><br>
   <!--  Initialized the delete function that has been defined in ts file within the event binding isDeleted()  -->
         
   <p>
