@@ -12,13 +12,21 @@
         <div class="form-group">
   
           <label for="theName">Your name:</label>
-          <input type="text" required class="form-control" id="theName" [(ngModel)]='newQuote.postBy' name="name">
+          <input type="text" class="form-control" id="theName" [(ngModel)]='newQuote.postBy' name="name" #name='ngModel' required>
+
+          <div [hidden]='name.valid || name.pristine' class="alert alert-danger">
+            <p>Name required!</p>
+          </div>
 
           <!--  Testing to see if the data will display  -->
-          Display {{ newQuote.postBy }} <br>
+          Name: {{ newQuote.postBy }} <br>
 
           <label for="theAuthor">Quote author:</label>
-          <input type="text" required class="form-control" id="theAuthor">
+          <input type="text" required class="form-control" id="theAuthor" [(ngModel)]='newQuote.author' name="author" #author='ngModel'>
+
+          <div [hidden]='author.valid || author.pristine' class="alert alert-danger">
+            <p>Name of the author is required!</p>
+          </div>
     
         </div>
 
@@ -29,7 +37,11 @@
         <div class="form-group">
   
           <label for="theQuote">Quote:</label>
-          <textarea name="" class="form-control" id="theQuote" cols="30" rows="4"></textarea>
+          <textarea name="" class="form-control" id="theQuote" cols="30" rows="4" [(ngModel)]='newQuote.quote' name="quote" #quote='ngModel' required></textarea>
+
+          <div [hidden]= 'quote.valid || quote.pristine' class="alert alert-danger">
+            <p>Please provide the quote!</p>
+          </div>
     
         </div><br>
 
