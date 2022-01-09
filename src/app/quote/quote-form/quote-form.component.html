@@ -5,14 +5,17 @@
   
     <hr>
   
-    <form action="">
+    <form action="" #quoteForm='ngForm'>
 
       <div class="col-4">
 
         <div class="form-group">
   
           <label for="theName">Your name:</label>
-          <input type="text" required class="form-control" id="theName">
+          <input type="text" required class="form-control" id="theName" [(ngModel)]='newQuote.postBy' name="name">
+
+          <!--  Testing to see if the data will display  -->
+          Display {{ newQuote.postBy }} <br>
 
           <label for="theAuthor">Quote author:</label>
           <input type="text" required class="form-control" id="theAuthor">
