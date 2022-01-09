@@ -523,11 +523,21 @@
 <!--  Start of my component html code  -->
 
 
-<div class="body">
+<div class="body container-fluid">
   <div id="title">
     <h1> <span id="left">{{ titleLeft }}</span><span id="right">{{ titleRight }}</span></h1>
   </div>
   <app-quote></app-quote>
   <router-outlet></router-outlet>
 </div>
+
+<section id="two">
+
+  <div id="quote-form">
+      
+    <app-quote-form></app-quote-form>
+  
+  </div>
+
+</section>
 

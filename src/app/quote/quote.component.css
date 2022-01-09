@@ -34,3 +34,7 @@ button#right {
 button:hover {
   background-color: #EBEBEB;
 }
+
+#quote-form {
+  background-color: aquamarine;
+}
