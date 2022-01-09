@@ -36,5 +36,13 @@ button:hover {
 }
 
 #quote-form {
-  background-color: aquamarine;
+  background-color: rgba(196, 196, 196, 0.6);
+}
+
+
+section#two {
+  background-color: rgba(255, 247, 233, 0.4);
+  margin-top: 2rem;
+  border-radius: 5px;
+  padding: 1rem;
 }

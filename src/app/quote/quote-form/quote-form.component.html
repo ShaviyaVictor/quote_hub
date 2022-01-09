@@ -5,7 +5,7 @@
   
     <hr>
   
-    <form action="" #quoteForm='ngForm'>
+    <form action="" #quoteForm='ngForm' (ngSubmit)="submitQuote()">
 
       <div class="col-4">
 
@@ -19,7 +19,6 @@
           </div>
 
           <!--  Testing to see if the data will display  -->
-          Name: {{ newQuote.postBy }} <br>
 
           <label for="theAuthor">Quote author:</label>
           <input type="text" required class="form-control" id="theAuthor" [(ngModel)]='newQuote.author' name="author" #author='ngModel'>
@@ -44,6 +43,8 @@
           </div>
     
         </div><br>
+
+        <hr>
 
         <button class="btn">Add Quote</button>
 

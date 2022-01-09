@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   titleLeft = 'Quote';
-  titleRight = 'Hub'
+  titleRight = 'Hub';
+  title: any;
+
+
+
+
 }

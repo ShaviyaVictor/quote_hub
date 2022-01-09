@@ -5,6 +5,7 @@ form {
 
 button {
   background-color: #93C4A4;
+  margin: 1rem;
 }
 button:hover {
   background-color: #226F3C;
