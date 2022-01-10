@@ -1,7 +1,7 @@
 # QuoteHub
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.     
-[quote_Hub_Screenshot](#)
+![quote_Hub_Screenshot](https://github.com/ShaviyaVictor/quote_hub/blob/main/src/assets/Screenshot%20from%202022-01-10%2006-39-31.png)
 
 ## Project Description
 The project is all about building *an application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational.*.    
