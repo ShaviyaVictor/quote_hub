@@ -13,7 +13,7 @@ The user should be able to:
 
 #### Live link to site
 The project was deployed to GitHub pages for publication.     
-To view the [project's live site](#).
+To view the [project's live site](https://shaviyavictor.github.io/quote_hub/).
 
 #### Author
 **Victor Shaviya**
